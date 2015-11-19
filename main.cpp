@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <string>
+#include <cstdio>
 using namespace::std;
 
 int main(int argc, const char * argv[]) {
@@ -16,7 +17,7 @@ int main(int argc, const char * argv[]) {
     const int buffer=100;
     char stringline[buffer];
     
-    while (fgets(stringline, buffer, stdin)&&stringline[1]!='\0') {
+    while (fgets(stringline, buffer, stdin)&&stringline[0]!='\0') {
         int i=0;
         while (stringline[i]!='\0') {
             i=i+1;
